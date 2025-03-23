@@ -1,0 +1,55 @@
+/* Глобальні стилі для всіх сторінок */
+body {
+    background-color: #f0e68c;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Стилі для заголовків */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-style: italic;
+}
+
+/* Стилі для посилань */
+a {
+    color: red !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue !important;
+    text-decoration: underline;
+}
+
+/* Таблиці */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffcc00;
+}
+
+/* Стилі для списків */
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+dl dt {
+    font-weight: bold;
+}

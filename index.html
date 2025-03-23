@@ -1,30 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="author" content="Sofiia">
     <title>Головна сторінка</title>
-    <style>
-        body {
-            background-color: #f0e68c;
-            font-family: Arial, sans-serif;
-        }
-        a { color: red; }
-        a:hover { color: blue; }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #ffcc00;
-        }
-    </style>
 </head>
 <body>
     <h1>Ласкаво просимо на нашу сторінку домашніх улюбленців</h1>
@@ -33,30 +13,30 @@
 
     <h2>Сторінки сайту</h2>
     <ul>
-        <li><a href="page1.html">Песики</a></li>
-        <li><a href="page2.html">Котики</a></li>
-        <li><a href="page3.html">Папуги</a></li>
+        <li><a href="dogs.html">Песики</a></li>
+        <li><a href="cats.html">Котики</a></li>
+        <li><a href="parrots.html">Папуги</a></li>
     </ul>
 
     <h2>Галерея домашніх улюбленців</h2>
     <table>
-
+        <caption>Наші улюбленці</caption>
         <tr>
             <th>Песики</th>
             <th>Котики</th>
             <th>Папуги</th>
-            <th>Хвостаті</th>
+            <th>Друзі</th>
         </tr>
         <tr>
             <td><img src="src/песики.jpg" width="100" height="100" alt="Песик"></td>
             <td><img src="src/котики.jpg" width="100" height="100" alt="Котик"></td>
             <td><img src="src/папуги.jpg" width="100" height="100" alt="Папуга"></td>
-            <td><img src="src/хвостатики.png" width="100" height="100" alt="Хвостатики"></td>
+            <td><img src="src/хвостатики.png" width="100" height="100" alt="Друзі"></td>
         </tr>
         <tr>
-            <td><a href="page1.html">Дізнатися про песиків</a></td>
-            <td><a href="page2.html">Дізнатися про котиків</a></td>
-            <td><a href="page3.html">Дізнатися про папуг</a></td>
+            <td><a href="dogs.html">Дізнатися про песиків</a></td>
+            <td><a href="cats.html">Дізнатися про котиків</a></td>
+            <td><a href="parrots.html">Дізнатися про папуг</a></td>
             <td><a href="https://my-world-animals.blogspot.com/">Відвідати сайт про тварин</a></td>
         </tr>
         <tr>
@@ -67,7 +47,42 @@
         </tr>
     </table>
 
-    <h2>Ще більше інформації</h2>
+    <h2>Вага/тривалість життя</h2>
+    <table cellspacing="5" cellpadding="10">
+        <colgroup>
+            <col style="background-color: #FFD700;">
+            <col>
+            <col style="background-color: #ADD8E6;">
+        </colgroup>
+        <tr>
+            <th rowspan="2">Тварина</th>
+            <th colspan="2">Характеристики</th>
+        </tr>
+        <tr>
+            <th>Середня вага</th>
+            <th>Середня тривалість життя</th>
+        </tr>
+        <tr>
+            <td>Собака</td>
+            <td>10-30 кг</td>
+            <td>10-15 років</td>
+        </tr>
+        <tr>
+
+
+        <tr>
+            <td>Кіт</td>
+            <td>3-6 кг</td>
+            <td>12-18 років</td>
+        </tr>
+        <tr>
+            <td>Папуга</td>
+            <td>0.1-1 кг</td>
+            <td>10-50 років</td>
+        </tr>
+    </table>
+
+    <h2>Вікі</h2>
     <iframe src="https://uk.wikipedia.org/wiki/%D0%A5%D0%B0%D1%82%D0%BD%D1%96_%D1%82%D0%B2%D0%B0%D1%80%D0%B8%D0%BD%D0%B8" width="600" height="400" style="border:1px solid black;"></iframe>
 </body>
 </html>
