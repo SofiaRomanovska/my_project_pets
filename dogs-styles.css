@@ -1,0 +1,38 @@
+/* Плаваючий блок — картинка */
+img {
+    float: left;
+    margin-left: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Псевдокласи для посилань */
+a:link {
+    color: #1a73e8;
+    text-decoration: none;
+}
+a:visited {
+    color: #5f6368;
+}
+a:hover {
+    text-decoration: underline;
+    color: #e8711a;
+}
+a:active {
+    color: #d93025;
+}
+
+/* Перший пункт списку */
+ul li:first-child,
+ol li:first-child {
+    font-weight: bold;
+    color: #00796b;
+}
+
+/* Псевдоелементи */
+h1::before {
+    content: "🐶 ";
+}
+h1::after {
+    content: " 🦴";
+}

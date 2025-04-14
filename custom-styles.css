@@ -1,0 +1,131 @@
+/* --- Мій базовий редизайн --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Кастом заголовка --- */
+.custom-heading {
+  font-size: 2.5rem;
+  color: #000000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.intro-text {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* --- Стилі для кнопки --- */
+.custom-primary {
+  display: inline-block;
+  background-color: #ccbb00;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.custom-primary:hover {
+  background-color: #005aa3;
+}
+
+/* --- Стилізований контейнер --- */
+.card-custom {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Стилізований контейнер для вікі --- */
+.wiki-container {
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* --- Стилізований футер --- */
+.custom-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* --- Іконки в футері --- */
+.footer-icon {
+  margin: 0 8px;
+  text-decoration: none;
+  vertical-align: middle;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon svg {
+  transition: fill 0.3s;
+}
+
+.footer-icon:hover svg {
+  fill: #555;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+}
+
+/* --- Стиль для span --- */
+.highlight-text {
+  color: #ccbb00;
+  font-weight: bold;
+  background-color: #f7f7f7;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+/* Псевдокласи для посилань */
+.menu-link:link {
+  color: #00ffd0;
+  text-decoration: none;
+}
+
+.menu-link:visited {
+  color: #2f8000;
+}
+
+.menu-link:active {
+  color: red;
+}
+
+.menu-link:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* Псевдоклас для першого елемента в списку */
+ul li:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Псевдоелементи для додавання контенту до посилань */
+.menu-link:before {
+  content: "→ ";
+}
+
+.menu-link:after {
+  content: " ←";
+}

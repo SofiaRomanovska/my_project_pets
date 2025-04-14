@@ -1,0 +1,34 @@
+img {
+    float: left;
+    margin-left: 20px;
+    border: 2px dotted #4caf50;
+    border-radius: 15px;
+}
+
+a:link {
+    color: #388e3c;
+    text-decoration: none;
+}
+a:visited {
+    color: #2e7d32;
+}
+a:hover {
+    color: #81c784;
+    text-decoration: underline;
+}
+a:active {
+    color: #1b5e20;
+}
+
+ul li:first-child,
+ol li:first-child {
+    font-weight: bold;
+    color: #00695c;
+}
+
+h1::before {
+    content: "🦜 ";
+}
+h1::after {
+    content: " 🎶";
+}

@@ -1,50 +1,77 @@
 /* Глобальні стилі для всіх сторінок */
 body {
-    background-color: #f0e68c;
+    background-color: #FFFACD;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     text-align: justify;
+    color: #222;
 }
 
 /* Стилі для заголовків */
 h1, h2, h3, h4, h5, h6 {
     color: #333;
+    margin-left: 20px;
     font-style: italic;
+}
+
+/* Клас для заголовків */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000080;
+    text-align: center;
 }
 
 /* Стилі для посилань */
 a {
-    color: red !important;
+    color: red;
     text-decoration: none;
 }
 
 a:hover {
-    color: blue !important;
+    color: blue;
     text-decoration: underline;
 }
 
-/* Контекстні селектори (стилі для вкладених елементів) */
+/* Унікальний ідентифікатор для посилань */
+#id {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Контекстні селектори */
 ul li a {
-    font-weight: bold; /* Робить посилання всередині списків жирними */
+    font-weight: bold;
 }
 
 table tr td a {
-    color: green !important; /* Посилання в таблицях мають зелений колір */
+    color: green
 }
 
-/* Сусідні селектори (стилі для елементів, які йдуть один за одним) */
+/* Сусідні селектори */
 h2 + ul {
-    background-color: #f8f8f8; /* Фон списків, що йдуть після заголовка h2 */
+    background-color: #f8f8f8;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+    max-width: 300px;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 p + p {
-    font-style: italic; /* Робить другий і наступні абзаци курсивними */
+    font-style: italic;
 }
 
-/* Дочірні селектори (стилі для елементів першого рівня вкладеності) */
+/* Внутрішній стиль для абзацу */
+.inline-paragraph {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* Дочірні селектори */
 table > caption {
     font-size: 20px;
     font-weight: bold;
@@ -52,35 +79,64 @@ table > caption {
 }
 
 ul > li {
-    margin-bottom: 5px; /* Додає відступи між пунктами списку */
+    margin-bottom: 5px;
 }
 
-/* Таблиці */
+ul a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 table {
     width: 80%;
     border-collapse: collapse;
     margin: 20px 0;
+    background-color: #f0f8ff;
 }
 
 th, td {
     border: 1px solid black;
     padding: 10px;
     text-align: center;
+    font-family: 'Courier New', monospace;
 }
 
 th {
     background-color: #ffcc00;
+    font-size: 18px;
 }
 
 /* Стилі для списків */
 ul {
     list-style-type: square;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #8b0000;
 }
 
 ol {
     list-style-type: decimal;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #00008b;
 }
 
 dl dt {
     font-weight: bold;
+    color: #006400;
+}
+
+dl dd {
+    font-style: italic;
+    color: #8b4513;
+}
+
+/* Поля та заповнення */
+.container {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #e6e6fa;
 }

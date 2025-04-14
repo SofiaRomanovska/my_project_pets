@@ -1,88 +1,55 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <meta name="author" content="Sofiia">
-    <title>Головна сторінка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мій Сайт</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="custom-styles.css" />
+
 </head>
 <body>
-    <h1>Ласкаво просимо на нашу сторінку домашніх улюбленців</h1>
-    <p>Тут ви знайдете цікаву інформацію про догляд та увагу до своїх хвостатиків.</p>
-    <p><b>І ми залюбки відповімо на всі питання!</b></p>
+  <header>
+    <h1 class="custom-heading">Раді тебе бачити!</h1>
+  </header>
 
-    <h2>Сторінки сайту</h2>
-    <ul>
-        <li><a href="dogs.html">Песики</a></li>
-        <li><a href="cats.html">Котики</a></li>
-        <li><a href="parrots.html">Папуги</a></li>
-    </ul>
+  <main>
+    <section class="card-custom">
+      <p class="intro-text">
+          <span class="highlight-text">Все про нас</span></p>
+      <a href="main.html" class="custom-primary menu-link">Перейти</a>
+    </section>
+  </main>
 
-    <h2>Галерея домашніх улюбленців</h2>
-    <table>
-        <caption>Наші улюбленці</caption>
-        <tr>
-            <th>Песики</th>
-            <th>Котики</th>
-            <th>Папуги</th>
-            <th>Друзі</th>
-        </tr>
-        <tr>
-            <td><img src="src/песики.jpg" width="100" height="100" alt="Песик"></td>
-            <td><img src="src/котики.jpg" width="100" height="100" alt="Котик"></td>
-            <td><img src="src/папуги.jpg" width="100" height="100" alt="Папуга"></td>
-            <td><img src="src/хвостатики.png" width="100" height="100" alt="Друзі"></td>
-        </tr>
-        <tr>
-            <td><a href="dogs.html">Дізнатися про песиків</a></td>
-            <td><a href="cats.html">Дізнатися про котиків</a></td>
-            <td><a href="parrots.html">Дізнатися про папуг</a></td>
-            <td><a href="https://my-world-animals.blogspot.com/">Відвідати сайт про тварин</a></td>
-        </tr>
-        <tr>
-            <td>Собаки - найвірніші друзі</td>
-            <td>Коти - незалежні та граційні</td>
-            <td>Папуги - веселі та яскраві</td>
-            <td>Всі тварини заслуговують на любов</td>
-        </tr>
-    </table>
-
-    <h2>Вага/тривалість життя</h2>
-    <table cellspacing="5" cellpadding="10">
-        <colgroup>
-            <col style="background-color: #FFD700;">
-            <col>
-            <col style="background-color: #ADD8E6;">
-        </colgroup>
-        <tr>
-            <th rowspan="2">Тварина</th>
-            <th colspan="2">Характеристики</th>
-        </tr>
-        <tr>
-            <th>Середня вага</th>
-            <th>Середня тривалість життя</th>
-        </tr>
-        <tr>
-            <td>Собака</td>
-            <td>10-30 кг</td>
-            <td>10-15 років</td>
-        </tr>
-        <tr>
-
-
-        <tr>
-            <td>Кіт</td>
-            <td>3-6 кг</td>
-            <td>12-18 років</td>
-        </tr>
-        <tr>
-            <td>Папуга</td>
-            <td>0.1-1 кг</td>
-            <td>10-50 років</td>
-        </tr>
-    </table>
-
+  <div class="wiki-container">
     <h2>Вікі</h2>
     <iframe src="https://uk.wikipedia.org/wiki/%D0%A5%D0%B0%D1%82%D0%BD%D1%96_%D1%82%D0%B2%D0%B0%D1%80%D0%B8%D0%BD%D0%B8" width="600" height="400" style="border:1px solid black;"></iframe>
+  </div>
 </body>
+
+<footer>
+  <p class="custom-footer">
+    &copy; 2025 Мій сайт
+    <br>
+    <a href="https://t.me/your_username" target="_blank" class="footer-icon" title="Telegram">
+      <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" fill="#888">
+        <path d="M9.036 16.318l-.396 4.348c.568 0 .814-.245 1.114-.539l2.67-2.557 5.534 4.033c1.014.558 1.728.266 1.98-.939l3.59-16.834c.326-1.533-.574-2.131-1.552-1.767L1.663 9.49c-1.492.585-1.472 1.422-.25 1.796l5.578 1.743 12.948-8.148c.61-.386 1.17-.173.712.213L9.036 16.318z"/>
+      </svg>
+    </a>
+
+    <a href="tel:+380123456789" class="footer-icon" title="Подзвонити">
+      <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" fill="#888">
+        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.06 21.5 2.5 13.94 2.5 4a1 1 0 011-1H7a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.05l-2.2 2.2z"/>
+      </svg>
+    </a>
+
+    <a href="mailto:example@email.com" class="footer-icon" title="Написати email">
+      <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" fill="#888">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
+  </p>
+</footer>
+
+
 </html>
