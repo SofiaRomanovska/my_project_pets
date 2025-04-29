@@ -1,4 +1,4 @@
-/* --- Мій базовий редизайн --- */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* --- Кастом заголовка --- */
+
 .custom-heading {
   font-size: 2.5rem;
   color: #000000;
@@ -23,10 +23,10 @@ body {
   color: #333;
 }
 
-/* --- Стилі для кнопки --- */
+
 .custom-primary {
   display: inline-block;
-  background-color: #ccbb00;
+  background-color: #62bf44;
   color: #ffffff;
   text-decoration: none;
   border: none;
@@ -41,7 +41,7 @@ button.custom-primary:hover {
   background-color: #005aa3;
 }
 
-/* --- Стилізований контейнер --- */
+
 .card-custom {
   max-width: 600px;
   margin: 40px auto;
@@ -51,14 +51,14 @@ button.custom-primary:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Стилізований контейнер для вікі --- */
+
 .wiki-container {
   margin: 40px auto;
   text-align: center;
   padding: 20px;
 }
 
-/* --- Стилізований футер --- */
+
 .custom-footer {
   text-align: center;
   font-size: 0.9rem;
@@ -66,7 +66,7 @@ button.custom-primary:hover {
   margin-bottom: 20px;
 }
 
-/* --- Іконки в футері --- */
+
 .footer-icon {
   margin: 0 8px;
   text-decoration: none;
@@ -87,7 +87,7 @@ button.custom-primary:hover {
   transform: scale(1.2);
 }
 
-/* --- Стиль для span --- */
+/* для span  */
 .highlight-text {
   color: #ccbb00;
   font-weight: bold;
@@ -98,12 +98,12 @@ button.custom-primary:hover {
 
 /* Псевдокласи для посилань */
 .menu-link:link {
-  color: #00ffd0;
+  color: #0051ff;
   text-decoration: none;
 }
 
 .menu-link:visited {
-  color: #2f8000;
+  color: #61006c;
 }
 
 .menu-link:active {
@@ -115,13 +115,13 @@ button.custom-primary:hover {
   text-decoration: underline;
 }
 
-/* Псевдоклас для першого елемента в списку */
+
 ul li:first-child {
   font-weight: bold;
   color: #333;
 }
 
-/* Псевдоелементи для додавання контенту до посилань */
+
 .menu-link:before {
   content: "→ ";
 }

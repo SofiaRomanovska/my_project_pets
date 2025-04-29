@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Зміни в DOM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="mainTitle">Ласкаво просимо на наш сайт!</h1>
+  <p id="introText">Сторінка для демонстрації методів роботи з DOM.</p>
+  <button id="changeBgButton">Змінити фон</button>
+  <button id="redirectButton">Перейти на іншу сторінку</button><br>
+
+  <script>
+    // Зміна фону сторінки на 30 секунд
+    document.getElementById('changeBgButton').addEventListener('click', () => {
+      document.body.style.backgroundColor = 'lightblue'; // Зміна фону
+      setTimeout(() => {
+        document.body.style.backgroundColor = ''; // Повернення фону через 30 секунд
+      }, 30000);
+    });
+
+    // Перенаправлення браузера на іншу сторінку
+    document.getElementById('redirectButton').addEventListener('click', () => {
+      location.href = 'https://www.example.com'; // Перехід на нову сторінку
+    });
+
+    // Використання innerHTML, outerHTML, nodeValue/data, textContent
+    const h1 = document.getElementById('mainTitle');
+    const p = document.getElementById('introText');
+
+    console.log('innerHTML:', h1.innerHTML); // Виводить HTML-вміст елемента
+    console.log('outerHTML:', h1.outerHTML); // Виводить HTML елемента разом з тегом
+    console.log('nodeValue:', p.firstChild.nodeValue); // Виводить текстовий вміст
+    console.log('textContent:', p.textContent); // Виводить текст без HTML
+
+    // Використання querySelectorAll
+    const paragraphs = document.querySelectorAll('p');
+    paragraphs.forEach((para, index) => {
+      console.log(`Параграф ${index + 1}:`, para.textContent);
+    });
+
+    // Внесення змін в DOM за допомогою document.write
+    document.write('Це новий параграф, доданий через document.write.');
+
+    // Створення нових елементів за допомогою document.createElement і document.createTextNode
+    const newDiv = document.createElement('div');
+    const newText = document.createTextNode('Це новий текстовий елемент.');
+    newDiv.appendChild(newText); // Додаємо текст до нового div
+    document.body.appendChild(newDiv); // Додаємо новий div до тіла сторінки
+
+    // Використання методів вставки: prepend, append, after, replaceWith
+    const firstParagraph = document.querySelector('p');
+    firstParagraph.prepend('Перед текстом параграфу: '); // Додаємо текст на початок
+    firstParagraph.append(' — цей текст додано в кінець.'); // Додаємо текст в кінець
+
+    // Вставка після елемента
+    firstParagraph.after('Це новий параграф після першого.');
+
+    // Заміна елемента
+    const newElement = document.createElement('p');
+    newElement.textContent = 'Це новий параграф, замінений на попередній.';
+    firstParagraph.replaceWith(newElement); // Замінюємо перший параграф на новий
+
+    // Видалення вузла
+    newDiv.remove(); // Видаляємо новий div
+  </script>
+</body>
+</html>
